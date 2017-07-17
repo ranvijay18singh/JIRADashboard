@@ -11,6 +11,8 @@
 		28331C231F1C9EB70070288B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C211F1C9EB70070288B /* ViewController.swift */; };
 		28331C251F1CB3FE0070288B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C241F1CB3FE0070288B /* Utility.swift */; };
 		28331C271F1CB4A90070288B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C261F1CB4A90070288B /* Constants.swift */; };
+		BAA5A0401F1CBAEB008FE240 /* LogInVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5A03F1F1CBAEB008FE240 /* LogInVc.swift */; };
+		BAA5A0421F1CBF1E008FE240 /* Homevc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5A0411F1CBF1E008FE240 /* Homevc.swift */; };
 		FD232EE01F1C996500C299BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD232EDE1F1C996500C299BA /* Main.storyboard */; };
 		FD232EE21F1C996500C299BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD232EE11F1C996500C299BA /* Assets.xcassets */; };
 		FD232EE51F1C996500C299BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD232EE31F1C996500C299BA /* LaunchScreen.storyboard */; };
@@ -21,6 +23,8 @@
 		28331C211F1C9EB70070288B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28331C241F1CB3FE0070288B /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		28331C261F1CB4A90070288B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BAA5A03F1F1CBAEB008FE240 /* LogInVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVc.swift; sourceTree = "<group>"; };
+		BAA5A0411F1CBF1E008FE240 /* Homevc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homevc.swift; sourceTree = "<group>"; };
 		FD232ED71F1C996500C299BA /* JiraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD232EDF1F1C996500C299BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD232EE11F1C996500C299BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 			children = (
 				28331C201F1C9EB70070288B /* AppDelegate.swift */,
 				28331C211F1C9EB70070288B /* ViewController.swift */,
+				BAA5A03F1F1CBAEB008FE240 /* LogInVc.swift */,
+				BAA5A0411F1CBF1E008FE240 /* Homevc.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,8 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28331C221F1C9EB70070288B /* AppDelegate.swift in Sources */,
+				BAA5A0421F1CBF1E008FE240 /* Homevc.swift in Sources */,
 				28331C231F1C9EB70070288B /* ViewController.swift in Sources */,
 				28331C251F1CB3FE0070288B /* Utility.swift in Sources */,
+				BAA5A0401F1CBAEB008FE240 /* LogInVc.swift in Sources */,
 				28331C271F1CB4A90070288B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JiraApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.incedo.JiraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JiraApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.incedo.JiraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

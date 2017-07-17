@@ -50,7 +50,6 @@
 		28331C181F1C9DF40070288B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FD232EDE1F1C996500C299BA /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -81,6 +80,7 @@
 		28331C1D1F1C9E6B0070288B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD232EDE1F1C996500C299BA /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +222,7 @@
 				FD232EDF1F1C996500C299BA /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		FD232EE31F1C996500C299BA /* LaunchScreen.storyboard */ = {

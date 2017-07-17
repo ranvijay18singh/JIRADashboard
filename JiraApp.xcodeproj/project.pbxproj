@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		28331C221F1C9EB70070288B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C201F1C9EB70070288B /* AppDelegate.swift */; };
 		28331C231F1C9EB70070288B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C211F1C9EB70070288B /* ViewController.swift */; };
+		28331C251F1CB3FE0070288B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C241F1CB3FE0070288B /* Utility.swift */; };
 		FD232EE01F1C996500C299BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD232EDE1F1C996500C299BA /* Main.storyboard */; };
 		FD232EE21F1C996500C299BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD232EE11F1C996500C299BA /* Assets.xcassets */; };
 		FD232EE51F1C996500C299BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD232EE31F1C996500C299BA /* LaunchScreen.storyboard */; };
@@ -17,6 +18,7 @@
 /* Begin PBXFileReference section */
 		28331C201F1C9EB70070288B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28331C211F1C9EB70070288B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28331C241F1CB3FE0070288B /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		FD232ED71F1C996500C299BA /* JiraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD232EDF1F1C996500C299BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD232EE11F1C996500C299BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		28331C1B1F1C9E6B0070288B /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				28331C241F1CB3FE0070288B /* Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				28331C221F1C9EB70070288B /* AppDelegate.swift in Sources */,
 				28331C231F1C9EB70070288B /* ViewController.swift in Sources */,
+				28331C251F1CB3FE0070288B /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

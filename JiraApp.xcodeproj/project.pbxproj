@@ -11,6 +11,9 @@
 		28331C231F1C9EB70070288B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C211F1C9EB70070288B /* ViewController.swift */; };
 		28331C251F1CB3FE0070288B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C241F1CB3FE0070288B /* Utility.swift */; };
 		28331C271F1CB4A90070288B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C261F1CB4A90070288B /* Constants.swift */; };
+		28331C291F1CD1660070288B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C281F1CD1660070288B /* BaseViewController.swift */; };
+		28331C2B1F1CD17E0070288B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C2A1F1CD17E0070288B /* MenuViewController.swift */; };
+		28331C2D1F1CD2E40070288B /* ProjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C2C1F1CD2E40070288B /* ProjectsVC.swift */; };
 		BAA5A0401F1CBAEB008FE240 /* LogInVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5A03F1F1CBAEB008FE240 /* LogInVc.swift */; };
 		BAA5A0421F1CBF1E008FE240 /* Homevc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5A0411F1CBF1E008FE240 /* Homevc.swift */; };
 		FD232EE01F1C996500C299BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD232EDE1F1C996500C299BA /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		28331C211F1C9EB70070288B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28331C241F1CB3FE0070288B /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		28331C261F1CB4A90070288B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		28331C281F1CD1660070288B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		28331C2A1F1CD17E0070288B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		28331C2C1F1CD2E40070288B /* ProjectsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsVC.swift; sourceTree = "<group>"; };
 		BAA5A03F1F1CBAEB008FE240 /* LogInVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVc.swift; sourceTree = "<group>"; };
 		BAA5A0411F1CBF1E008FE240 /* Homevc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homevc.swift; sourceTree = "<group>"; };
 		FD232ED71F1C996500C299BA /* JiraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,14 +57,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		28331C181F1C9DF40070288B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FD232EDE1F1C996500C299BA /* Main.storyboard */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
 		28331C1A1F1C9E6B0070288B /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +83,7 @@
 		28331C1D1F1C9E6B0070288B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD232EDE1F1C996500C299BA /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,9 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				28331C201F1C9EB70070288B /* AppDelegate.swift */,
+				28331C281F1CD1660070288B /* BaseViewController.swift */,
+				28331C2A1F1CD17E0070288B /* MenuViewController.swift */,
 				28331C211F1C9EB70070288B /* ViewController.swift */,
 				BAA5A03F1F1CBAEB008FE240 /* LogInVc.swift */,
 				BAA5A0411F1CBF1E008FE240 /* Homevc.swift */,
+				28331C2C1F1CD2E40070288B /* ProjectsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,7 +134,6 @@
 				28331C1C1F1C9E6B0070288B /* Constants */,
 				28331C1D1F1C9E6B0070288B /* View */,
 				28331C1E1F1C9E6B0070288B /* Model */,
-				28331C181F1C9DF40070288B /* View */,
 				28331C171F1C9DE10070288B /* Resources */,
 				FD232EE31F1C996500C299BA /* LaunchScreen.storyboard */,
 				FD232EE61F1C996500C299BA /* Info.plist */,
@@ -217,7 +218,10 @@
 				28331C231F1C9EB70070288B /* ViewController.swift in Sources */,
 				28331C251F1CB3FE0070288B /* Utility.swift in Sources */,
 				BAA5A0401F1CBAEB008FE240 /* LogInVc.swift in Sources */,
+				28331C291F1CD1660070288B /* BaseViewController.swift in Sources */,
+				28331C2D1F1CD2E40070288B /* ProjectsVC.swift in Sources */,
 				28331C271F1CB4A90070288B /* Constants.swift in Sources */,
+				28331C2B1F1CD17E0070288B /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +234,7 @@
 				FD232EDF1F1C996500C299BA /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		FD232EE31F1C996500C299BA /* LaunchScreen.storyboard */ = {

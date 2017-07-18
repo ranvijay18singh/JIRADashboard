@@ -1,20 +1,18 @@
 //
-//  Homevc.swift
+//  ProjectsVC.swift
 //  JiraApp
 //
-//  Created by ranjansahu on 17/07/17.
+//  Created by Amit Pandey on 17/07/17.
 //  Copyright © 2017 Ranvijay. All rights reserved.
 //
 
 import UIKit
 
-class Homevc: BaseViewController {
+class ProjectsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSlideMenuButton()
 
-         self.navigationController?.setNavigationBarHidden(true, animated: false)
         // Do any additional setup after loading the view.
     }
 

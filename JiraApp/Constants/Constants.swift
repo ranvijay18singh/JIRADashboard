@@ -9,6 +9,20 @@
 import Foundation
 import UIKit
 
+
+///Message text
+let MSG_PLEASE_WAIT = "Please wait..."
+
+let MSG_INCORRECT_USERNAME_PASSWORD = "The email or password entered is incorrect"
+
+let MSG_INCORRECT_EMAIL = "You must enter a valid email address"
+
+let MSG_BLANK_USERNAME_PASSWORD = "The email or password can not be left blank"
+
+//create standard userdefault object
+let kSTANDARDUSERDEFAULT = UserDefaults.standard
+
+
 class Constants
 {
     //MARK:
@@ -30,6 +44,13 @@ class Constants
     static let kInternetConnection = "Internet Connection"
     static let kInternetConntectionRefresh = "There is an error loading \(Bundle.main.infoDictionary?["CFBundleDisplayName"] ?? ""). Please check your Internet Connection and try again later"
     static let kVideoImagePlaceholder = "videoImagePlaceholder"
+    
+    
+    
+    
+    
+    
+    
     
     //MARK:
     //MARK: FONT Constants

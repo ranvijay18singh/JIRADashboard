@@ -16,7 +16,6 @@
 		28331C2D1F1CD2E40070288B /* ProjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28331C2C1F1CD2E40070288B /* ProjectsVC.swift */; };
 		BAA5A0401F1CBAEB008FE240 /* LogInVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5A03F1F1CBAEB008FE240 /* LogInVc.swift */; };
 		BAA5A0421F1CBF1E008FE240 /* Homevc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5A0411F1CBF1E008FE240 /* Homevc.swift */; };
-		FD232EE01F1C996500C299BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD232EDE1F1C996500C299BA /* Main.storyboard */; };
 		FD232EE21F1C996500C299BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD232EE11F1C996500C299BA /* Assets.xcassets */; };
 		FD232EE51F1C996500C299BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD232EE31F1C996500C299BA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -32,7 +31,6 @@
 		BAA5A03F1F1CBAEB008FE240 /* LogInVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVc.swift; sourceTree = "<group>"; };
 		BAA5A0411F1CBF1E008FE240 /* Homevc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homevc.swift; sourceTree = "<group>"; };
 		FD232ED71F1C996500C299BA /* JiraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD232EDF1F1C996500C299BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD232EE11F1C996500C299BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD232EE41F1C996500C299BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD232EE61F1C996500C299BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 		28331C1D1F1C9E6B0070288B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FD232EDE1F1C996500C299BA /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,7 +199,6 @@
 			files = (
 				FD232EE51F1C996500C299BA /* LaunchScreen.storyboard in Resources */,
 				FD232EE21F1C996500C299BA /* Assets.xcassets in Resources */,
-				FD232EE01F1C996500C299BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,15 +224,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FD232EDE1F1C996500C299BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD232EDF1F1C996500C299BA /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		FD232EE31F1C996500C299BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -58,6 +58,7 @@ class LogInVc: UIViewController ,UITextFieldDelegate {
         if (emailPasswordValid()) {
             Utility.showActivityIndicatorWithMsg(MSG_PLEASE_WAIT)
 
+            
             self.goToHomePage()
         }
     }

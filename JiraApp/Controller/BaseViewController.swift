@@ -21,36 +21,36 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
     }
     
     func slideMenuItemSelectedAtIndex(_ index: Int32) {
-        let topViewController : UIViewController = self.navigationController!.topViewController!
-        print("View Controller is : \(topViewController) \n", terminator: "")
+       // let topViewController : UIViewController = self.navigationController!.topViewController!
+        //print("View Controller is : \(topViewController) \n", terminator: "")
         switch(index){
         case 0:
             print("Projects\n", terminator: "")
 
-            self.openViewControllerBasedOnIdentifier("Home")
+            self.openViewControllerBasedOnIdentifier("HomeVC")
             
             break
         case 1:
             print("Play\n", terminator: "")
             
-            self.openViewControllerBasedOnIdentifier("PlayVC")
+            self.openViewControllerBasedOnIdentifier("HomeVC")
             
             break
         default:
-            print("default\n", terminator: "")
+            self.openViewControllerBasedOnIdentifier("HomeVC")
         }
     }
     
     func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
-        let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
-        
-        let topViewController : UIViewController = self.navigationController!.topViewController!
-        
-        if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
-            print("Same VC")
-        } else {
-            self.navigationController!.pushViewController(destViewController, animated: true)
-        }
+//        let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
+//        
+//        let topViewController : UIViewController = (self.navigationController?.topViewController)!
+//        
+//        if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
+//            print("Same VC")
+//        } else {
+//            self.navigationController!.pushViewController(destViewController, animated: true)
+//        }
     }
     
     func addSlideMenuButton(){
@@ -110,19 +110,19 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         sender.isEnabled = false
         sender.tag = 10
         
-        let menuVC : MenuViewController = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
-        menuVC.btnMenu = sender
-        menuVC.delegate = self
-        self.view.addSubview(menuVC.view)
-        self.addChildViewController(menuVC)
-        menuVC.view.layoutIfNeeded()
-        
-        
-        menuVC.view.frame=CGRect(x: 0 - UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
-        
-        UIView.animate(withDuration: 0.3, animations: { () -> Void in
-            menuVC.view.frame=CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
-            sender.isEnabled = true
+            let menuVC : MenuViewController = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+            menuVC.btnMenu = sender
+            menuVC.delegate = self
+            self.view.addSubview(menuVC.view)
+            self.addChildViewController(menuVC)
+            menuVC.view.layoutIfNeeded()
+            
+            
+            menuVC.view.frame=CGRect(x: 0 - UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
+            
+            UIView.animate(withDuration: 0.3, animations: { () -> Void in
+                menuVC.view.frame=CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
+                sender.isEnabled = true
             }, completion:nil)
-    }
+        }
 }

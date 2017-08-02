@@ -14,6 +14,7 @@ protocol SlideMenuDelegate {
 
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+   // var myHome = Homevc()
     /**
     *  Array to display menu options
     */
@@ -39,9 +40,13 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     */
     var delegate : SlideMenuDelegate?
     
+    var selectedIndex :Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tblMenuOptions.tableFooterView = UIView()
+        selectedIndex = kSTANDARDUSERDEFAULT.value(forKey: "selectedIndex") as! Int!
+        //self.view.backgroundColor = Utility.colorFromHex(hex: "#005499")
         // Do any additional setup after loading the view.
     }
     
@@ -53,6 +58,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateArrayMenuOptions()
+       // tblMenuOptions.backgroundColor = UIColor.clear
     }
     
     func updateArrayMenuOptions(){
@@ -66,14 +72,14 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     @IBAction func onCloseMenuClick(_ button:UIButton!){
-        btnMenu.tag = 0
+          btnMenu.tag = 1
         
         if (self.delegate != nil) {
             var index = Int32(button.tag)
             if(button == self.btnCloseMenuOverlay){
                 index = -1
             }
-            delegate?.slideMenuItemSelectedAtIndex(index)
+            //delegate?.slideMenuItemSelectedAtIndex(index)
         }
         
         UIView.animate(withDuration: 0.3, animations: { () -> Void in
@@ -89,16 +95,22 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cellMenu")!
         
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+         cell.backgroundColor = UIColor.clear
+        if  selectedIndex == indexPath.row {
+           cell.backgroundColor = UIColor.gray
+        }
+        
+        
         cell.layoutMargins = UIEdgeInsets.zero
         cell.preservesSuperviewLayoutMargins = false
-        cell.backgroundColor = UIColor.clear
+        //cell.backgroundColor = UIColor.clear//Utility.colorFromHex(hex: "#00529c")
         
         let lblTitle : UILabel = cell.contentView.viewWithTag(101) as! UILabel
         let imgIcon : UIImageView = cell.contentView.viewWithTag(100) as! UIImageView
         
         imgIcon.image = UIImage(named: arrayMenuOptions[indexPath.row]["icon"]!)
         lblTitle.text = arrayMenuOptions[indexPath.row]["title"]!
+        lblTitle.textColor = UIColor.white
         
         return cell
     }
@@ -106,7 +118,11 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let btn = UIButton(type: UIButtonType.custom)
         btn.tag = indexPath.row
+        //selectedIndex = indexPath.row
+         kSTANDARDUSERDEFAULT.set(indexPath.row, forKey: "selectedIndex")
+        
         self.onCloseMenuClick(btn)
+        //myHome.updateDetails(selectedProject: arrayMenuOptions[indexPath.row]["title"]!)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

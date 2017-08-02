@@ -13,6 +13,7 @@ class ProjectsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Project Details"
         // Do any additional setup after loading the view.
     }
 
